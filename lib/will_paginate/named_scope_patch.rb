@@ -5,7 +5,7 @@ ActiveRecord::Associations::AssociationProxy.class_eval do
   end
 end
 
-[ ActiveRecord::Associations::AssociationCollection,
+[ ActiveRecord::Associations::CollectionAssociation,
     ActiveRecord::Associations::HasManyThroughAssociation ].each do |klass|
   klass.class_eval do
     protected
